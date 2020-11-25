@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background-image: url('../img/haunted-house.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -10;
+}
+
+.ghost {
+    animation-name: ghost;
+    animation-duration: 10s;
+    position: relative;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ghost {
+    0% {top: 0; left: 0;}
+    25% {top: 75%;}
+    50% {left: 85%;}
+    75% {top: 20%; left: 85%;}
+    100% {top: 10%; left: 45%;}
+}
+
