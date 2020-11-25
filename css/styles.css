@@ -12,11 +12,30 @@ body {
     z-index: -10;
 }
 
+h1 {
+    font-family: sans-serif;
+    color: #fff;
+    position: relative;
+    top: 80%;
+    left: 35%;
+    font-size: 40px;
+    padding: 10px;
+    background-color: lightskyblue;
+    animation-name: animateTitle;
+    animation-duration: 5s;
+}
+
+@keyframes animateTitle {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 .ghost {
     animation-name: ghost;
     animation-duration: 10s;
-    position: relative;
+    position: absolute;
     animation-fill-mode: forwards;
+    animation-delay: 5s;
 }
 
 @keyframes ghost {
@@ -26,4 +45,3 @@ body {
     75% {top: 20%; left: 85%;}
     100% {top: 10%; left: 45%;}
 }
-
